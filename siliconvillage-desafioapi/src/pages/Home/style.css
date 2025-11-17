@@ -1,0 +1,27 @@
+.container-home {
+  display: flex;;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+h1 {
+  color: rgb(49, 70, 185);
+  font-size: 32px;
+}
+
+.botoes-home {
+  margin-top: 40px;
+  display: flex;
+  gap: 40px;
+}
+
+.botao-home {
+  background-color: rgb(49, 70, 185);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+}

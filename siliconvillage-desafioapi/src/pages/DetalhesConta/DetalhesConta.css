@@ -1,0 +1,209 @@
+.container-detalhes {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+}
+
+h2 {
+    color: rgb(49, 70, 185);
+    font-size: 2rem;
+    margin-bottom: 24px;
+}
+
+.detalhes-card {
+    background-color: #F3F6FB;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(49, 70, 185, 0.10);
+    padding: 32px 40px 20px 40px;
+    min-width: 320px;
+    max-width: 390px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: #24305e;
+}
+
+.detalhes-card p {
+    margin: 8px 0;
+}
+
+.botoes-detalhes {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.botoes-detalhes button {
+    background: rgb(49, 70, 185);;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 9px 24px;
+    border-radius: 999px;
+    cursor: pointer;
+    margin: 4px 0;
+    font-size: 16px;
+}
+
+.botoes-detalhes button:last-of-type {
+  background: #dde1f6;
+  color: #363636;
+}
+
+.modal-deposito {
+    padding: 18px 12px;
+    background: #fafcff;
+    border: 1.5px solid #5366d4;
+    border-radius: 16px;
+    margin: 20px 0;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    box-shadow: 0 4px 18px rgba(83, 102, 212, 0.10);
+}
+
+.modal-deposito input[type="number"] {
+    padding: 8px 14px;
+    font-size: 1.05rem;
+    border: 1.5px solid #5366d4;
+    border-radius: 8px;
+    outline: none;
+    background: #f2f4ff;
+    width: 180px;
+}
+
+.modal-deposito input[type="number"]:focus {
+  border-color: #3645b6;
+  background: #fff;
+}
+
+.modal-deposito button {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    background: #5366d4;
+    color: #fff;
+    margin-left: 8px;
+}
+
+.modal-deposito button:last-of-type {
+  background: #dde1f6;
+  color: #363636;
+}
+
+.modal-saque {
+    padding: 18px 12px;
+    background: #fff9fa;
+    border: 1.5px solid #e45b5b;
+    border-radius: 16px;
+    margin: 20px 0;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    box-shadow: 0 4px 18px rgba(83, 102, 212, 0.10);
+}
+
+.modal-saque input[type="number"] {
+    padding: 8px 14px;
+    font-size: 1.05rem;
+    border: 1.5px solid #e45b5b;
+    border-radius: 8px;
+    outline: none;
+    background: #fceeee;
+    width: 160px;
+}
+
+.modal-saque input[type="number"]:focus {
+  border-color: #b02d2d;
+  background: #fff;
+}
+
+.modal-saque button {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    background: #e45b5b;
+    color: #fff;
+    margin-left: 8px;
+}
+
+.modal-saque button:last-of-type {
+  background: #fdebed;
+  color: #363636;
+}
+
+/* Visualização do extrato */
+
+.modal-extrato {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 25, 60, 0.21);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-conteudo-extrato {
+  background: #fff;
+  border-radius: 14px;
+  max-width: 400px;
+  width: 95vw;
+  max-height: 76vh;
+  overflow-y: auto;
+  box-shadow: 0 6px 28px #43456c33;
+  padding: 32px 30px 20px 30px;
+  border: 2.5px solid #5c5efd26;
+  position: relative;
+}
+
+.modal-conteudo-extrato h3 {
+  color: #4447ab;
+  text-align: center;
+  font-size: 1.34rem;
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.modal-conteudo-extrato ul {
+  list-style: none;
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+.modal-conteudo-extrato li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1.2px dashed #e3e3ed;
+  padding: 11px 0 8px 0;
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.04em;
+  letter-spacing: 0.02em;
+}
+
+.modal-conteudo-extrato button {
+  display: block;
+  margin: 18px auto 0 auto;
+  padding: 9px 22px;
+  background: rgb(49, 70, 185);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.08em;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 3px 10px #5a57ca28;
+  transition: background 0.18s;
+}
